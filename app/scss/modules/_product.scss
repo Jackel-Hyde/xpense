@@ -1,0 +1,125 @@
+.product{
+    &_title{
+        display: flex;
+        align-items: center;
+        h2{
+            font-family: "HindSiliguri";
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 96px;
+            margin-right: 30px;
+        }
+        p{
+            width: 50%;
+            font-family: "HindSiliguri";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 39px;
+            color: #BDBDBD;
+        }
+    }
+
+    &_cards{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        column-count: 3;
+        text-align: center;
+        justify-items: center;
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            border-radius: 12px;
+            transition: box-shadow 0.3s, transform 0.3s;
+            &:hover{
+                box-shadow: 0 4px 8px rgba(225, 225, 225, 0.5);
+                transform: scale(1.02);
+                .arrow-black{
+                    opacity: 1;
+                } 
+            }
+        }
+        &-img--1{
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: #FFBD740D;
+            img{
+                max-width: 24px;
+            }
+        }
+        &-img--2{
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: #E2598B0D;
+            ;
+            img{
+                max-width: 24px;
+            }
+        }
+        &-img--3{
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: #4D12EE0D;
+            img{
+                max-width: 24px;
+            }
+        }
+        &-title{
+            margin-top: 24px;
+            font-family: "HindSiliguri";
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &-text{
+            margin-top: 12px;
+            font-family: "HindSiliguri";
+            font-weight: 400;
+            font-size: 24px;
+            color: #BDBDBD;
+        }
+        .arrow-black{
+            margin-top: 32px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .product_title{
+        display: block;
+        p{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .product_title{
+        h2{
+            font-size: 70px;
+            line-height: 70px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+}

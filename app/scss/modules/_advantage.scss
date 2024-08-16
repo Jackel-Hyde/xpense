@@ -1,0 +1,82 @@
+.advantage{
+    padding-top: 212px;
+    &_img{
+        width: calc(50% - 15px);
+        img{
+            max-width: 100%;
+        }
+    }
+    &_section{
+        gap: 30px;
+        padding-bottom: 283px;
+        display: flex;
+        align-items: center;
+        &:nth-child(even){
+            .advantage_img{
+                order: -1;
+            }
+        }
+        &-info{
+            width: calc(50% - 15px);
+            &--description{
+                padding-bottom: 24px;
+                text-transform: uppercase;
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 39px;
+                color: #BDBDBD;
+            }
+            &--title{
+                padding-bottom: 24px;
+                font-family: "HindSiliguri";
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 96px;
+            }
+            &--text{
+                padding-bottom: 24px;
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 39px;
+                color: #BDBDBD;
+            }
+            &--btn{
+                padding-bottom: 24px;
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 24px;
+                color: #FF7235;
+                img{
+                    max-width: 100%;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:910px) {
+    .advantage{
+        &_img{
+            display: none;
+        }
+        &_section-info{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:550px){
+    .advantage_section-info{
+        &--title{
+            font-size: 70px;
+            line-height: 70px;
+        }
+        &--text{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+}

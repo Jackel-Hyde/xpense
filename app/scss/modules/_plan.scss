@@ -1,0 +1,94 @@
+.plan{
+    margin-top: 263px;
+    &_title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        h2{
+            font-family: "HindSiliguri";
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 72px;
+        }
+    }
+    &_cards{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        column-count: 3;
+        justify-items: center;
+        &-content{
+            margin: 41px 113px 60px 40px;
+        }
+        &-card{
+            margin-left: 30px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(225, 225, 225, 0.5);
+            &--img{
+                margin-top: 43px;
+            }
+            &--title{
+                margin-top: 24px;
+                font-family: "HindSiliguri";
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 52px;
+            }
+            &--info{
+                margin-top: 24px;
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                list-style-position: inside;
+                padding-left: 26px;
+            }
+            &--price{
+                margin-top: 24px;
+                margin-bottom: 40px;
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 19px;
+                color: #BDBDBD;
+                span{
+                    display: inline-flex;
+                    align-items: center;
+                    font-family: "HindSiliguri";
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 39px;
+                    color: black;
+                    p{
+                        font-family: "HindSiliguri";
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #BDBDBD;
+                    }
+                }
+            }
+            &--btn{
+                font-family: "HindSiliguri";
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FF7235;
+                border: 1px solid #FF7235;
+                border-radius: 8px;
+                padding: 12px 24px;
+                &:hover{
+                    background-color: #FF7235;
+                    color: #FFFFFF;
+                    svg{
+                        path{
+                            fill: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

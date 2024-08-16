@@ -1,0 +1,33 @@
+.info{
+    padding-top: 211px;
+    &_fon{
+        background-repeat: no-repeat;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        background-size: cover;
+        background-position: center;
+    }
+    .statistics{
+        padding-top: 87px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        img{
+            max-width: 100%;
+        }
+    }
+    .sponsors{
+        margin-top: calc(0vh + 5vw);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 108px;
+        grid-template-columns: repeat(5,minmax(40px, 1fr));
+        column-gap: min(5vw, 108px);
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+            min-width: 40px;
+        } 
+    }
+}
